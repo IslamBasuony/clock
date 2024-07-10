@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contaner{
+    width: 50%;
+    height: 70vh;
+    background-color: rgb(33, 33, 33);
+    text-align: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px;
+    border: 1px solid black;;
+}
+.analog{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: white;
+    padding-top: 20px;
+    position: relative;
+    top: 20px;
+    left: 0;
+    transform: translateX(45%);
+    margin-bottom: 50px;
+}
+.time{
+    --rotation :0 ;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(var(--rotation));
+    transition: 1s;
+}
+.number1{--rotation :30deg}
+.number2{--rotation :60deg}
+.number3{--rotation :90deg}
+.number4{--rotation :120deg}
+.number5{--rotation :150deg}
+.number6{--rotation :180deg}
+.number7{--rotation :210deg}
+.number8{--rotation :240deg}
+.number9{--rotation :270deg}
+.number10{--rotation :300deg}
+.number11{--rotation :330deg}
+
+.hour{
+    --rotate:0;
+    width: 13px;
+    height: 40%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background-color: black;
+    transform-origin: bottom;
+    transform: translate(-50% , 30%) rotate(calc(var(--rotation)*1deg));
+    border-radius: 5px;
+}
+.minte{
+    width: 10px;
+    height: 45%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background-color: rgb(43, 42, 42);
+    transform-origin: bottom;
+    transform: translate(-50% , 15%) rotate(calc(var(--rotation)*1deg));
+    border-radius: 5px;
+
+}
+.second{
+    --rotation:0;
+    width: 5px;
+    height: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: top;
+    background-color: rgb(68, 3, 3);
+    transform: translateX(-50%) rotate(calc(var(--rotation)*.5deg));
+    border-radius: 5px;
+}
+
+
+
+
+.digetal{
+    width: 20%;
+    margin: auto;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
